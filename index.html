@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laboratorio 10</title>
+</head>
+
+<body>
+    <script>
+        //parte 1
+
+        let nombre = "gloria"
+        let edad = 26
+        let esEstudiante = true
+        console.log("nombre: ", nombre);
+        console.log("edad: ", edad);
+        console.log("Es Estudiante: ", esEstudiante);
+
+        //parte 2
+
+        let a = 4;
+        let b = 5;
+
+        let suma = a + b;
+        console.log("suma: ", suma);
+        let resta = a - b;
+        console.log("resta: ", resta);
+        let multi = a * b;
+        console.log("multiplicacion: ", multi);
+        let div = a / b;
+        console.log("division: ", div);
+
+        //comparacion
+
+        let igual = a == b;
+        console.log("a es igual a b: ", igual);
+        let diferente = a != b;
+        console.log("a es diferente de b: ", diferente);
+        let mayor = a > b;
+        console.log("a es mayor a b: ", mayor);
+        let menor = a < b;
+        console.log("a es menor a b: ", menor);
+        let mayorigual = a >= b;
+        console.log("a es mayor o igual a b: ", mayorigual);
+        let menorigual = a >= b;
+        console.log("a es menor o igual a b: ", menorigual);
+
+
+        //operadores logicos
+        let esMayorEdad = true;
+        let licencia = false;
+        let puedeConducir = esMayorEdad && licencia;
+        console.log(`hola, ${nombre}, usted puede conducir: $puedeConducir`);
+
+        let = nopuedeconducir = esMayorEdad || licencia;
+        console.log(`hola, ${nombre}, usted puede conducir: $nopuedeconducir`);
+
+        //parte 4
+
+        let nombre2 = prompt("ingrese su nombre: ");
+        let edad2 = parseInt(prompt("ingrese su edad: "));
+        let esEstudiante2 = prompt("eres estudiante? si/no");
+        if (edad2 >= 18) {
+            console.log(`${nombre2} es mayor de edad`);
+        }
+        else {
+            console.log(`${nombre2} es menor de edad`);
+        }
+
+        if (esEstudiante2 == "si") {
+            console.log(`${nombre2} tiene derecho a descuento por ser estudiante`);
+        }
+        else {
+            console.log(`${nombre2} NO tiene descuento por ser estudiante`)
+        }
+    </script>
+</body>
+
+</html>
